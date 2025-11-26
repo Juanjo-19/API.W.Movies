@@ -1,8 +1,11 @@
-﻿namespace API.W.Movies.DAL.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace API.W.Movies.DAL.Models
 {
     public class AuditBase
     {
-        public virtual int id { get; set; }
+        [Key]
+        public virtual int Id { get; set; }
 
         public virtual DateTime CreatedDate { get; set; }
 
